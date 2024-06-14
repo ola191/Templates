@@ -8,12 +8,12 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("WindowTitle")
         self.setMinimumSize(500,500)
 
-        def resizeEvent(self, event):
-            size = event.size()
-            width = self.width()
-            height = self.height()
+    def resizeEvent(self, event):
+        size = event.size()
+        width = self.width()
+        height = self.height()
 
-            super().resizeEvent(event)
+        super().resizeEvent(event)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
